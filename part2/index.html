@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>assignment8 part2</title>
+<style type="text/css">
+  .active {
+    z-index:99;
+  }
+    
+  #slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+  }
+
+  #slideshow IMG.active {
+    z-index:10;
+  }
+
+  #slideshow IMG.last-active {
+    z-index:9;
+  }
+    
+  ul {
+    list-style-type: none;
+  }
+    
+  * {
+     margin: 0;
+     padding: 0;
+  }
+	
+  body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	margin: 20px;
+	padding: 10px;
+  }
+
+  section:nth-of-type(2) {
+    padding: 15px 25px;
+    width: 650px;
+    margin-top: 20px;
+    margin-left: 25px;
+    border: 3px solid blue;	
+ }
+
+  h1 {
+    font-size: 150%;
+  }
+  
+  h1 em {
+    font-size: 0.50em;
+  }
+
+  h2 {
+    font-size: 120%;
+    padding: .25em 0 .25em 25px;
+    cursor: pointer;
+  }
+
+  
+  .plus {
+    background: url(edit_add.png) no-repeat left center;
+  }
+  
+  .minus {
+    background: url(remove_minus_sign.png) no-repeat left center;
+  }
+   
+  .close {
+    display: none;
+  }
+  
+  .open {
+    display: block;
+  }
+    
+  ul {
+    padding-left: 45px;
+  }
+  
+  li {
+    padding-bottom: .25em;
+  }
+  
+  p {
+    padding-bottom: .25em;
+    padding-left: 25px;
+  }
+  
+  #intro {
+    margin: 20px 10px;
+  }
+  
+  ol li:nth-of-type(3), ol li:nth-of-type(8) {
+    color: red;    
+  }
+  
+  #intro ul {
+    margin-left: 50px;
+    margin-top: 0px;
+    color: red;
+    list-style-type: disc;
+  }
+    
+            .tabs {
+                width:60%;
+                display:inline-block;
+            }
+ 
+            .tab-links:after {
+                display:block;
+                clear:both;
+                content:'';
+            }
+ 
+            .tab-links li {
+                margin:0px 5px;
+                float:left;
+                list-style:none;
+            }
+ 
+            .tab-links a {
+                padding:9px 15px;
+                display:inline-block;
+                border-radius:3px 3px 0px 0px;
+                background:#7FB5DA;
+                font-size:16px;
+                font-weight:600;
+                color:#4c4c4c;
+                transition:all linear 0.15s;
+            }
+ 
+            .tab-links a:hover {
+                background:#a7cce5;
+                text-decoration:none;
+            }
+ 
+            li.active a, li.active a:hover {
+                background:#fff;
+                color:#4c4c4c;
+            }
+ 
+
+            .tab-content {
+                padding:15px;
+                border-radius:3px;
+                box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+                background:#fff;
+            }
+ 
+            .tab {
+                display:none;
+            }
+ 
+            .tab.active {
+                display:block;
+            }
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+<!--
+<ul id="sliderDiv">
+    <li><img src="images/1.jpg" alt="" /></li>
+    <li><img src="images/2.jpg" alt="" /></li>
+    <li><img src="images/3.jpg" alt="" /></li>
+    <li><img src="images/4.jpg" alt="" /></li>
+    <li><img src="images/5.jpg" alt="" /></li>
+</ul>
+-->
+
+		  
+
+<!--
+<section>
+      <h1>jQuery FAQs</h1>
+
+      <h2>What is jQuery?</h2>
+      <div>
+	    <p>jQuery is a library of the JavaScript functions that you're most likely 
+           to need as you develop web sites.
+        </p>
+      </div>
+      <h2>Why is jQuery becoming so popular?</h2>
+      <div>
+	    <p>Three reasons:</p>
+          <ul>
+            <li>It's free.</li>
+            <li>It lets you get more done in less time.</li>
+            <li>All of its functions are cross-browser compatible.</li>
+          </ul>
+      </div>
+
+      <h2>Which is harder to learn: jQuery or JavaScript?</h2>
+      <div>
+        <p>For most functions, jQuery is significantly easier to learn 
+           and use than JavaScript. But remember that jQuery is JavaScript.
+        </p>
+      </div>
+    </section>
+-->
+
+<!--
+ <div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Tab #1</a></li>
+        <li><a href="#tab2">Tab #2</a></li>
+        <li><a href="#tab3">Tab #3</a></li>
+        <li><a href="#tab4">Tab #4</a></li>
+    </ul>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <p>Tab #1</p>
+        </div>
+        <div id="tab2" class="tab">
+            <p>Tab #2</p>
+        </div>
+        <div id="tab3" class="tab">
+            <p>Tab #3</p>
+        </div>
+        <div id="tab4" class="tab">
+            <p>Tab #4</p>
+        </div>
+    </div>
+</div>
+-->
+
+<script src="script.js"></script>
+</body>
+</html>
